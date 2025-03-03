@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 p-5" id="main-body">
+    <header>
+        <nav>
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center bg-white p-4 rounded-lg shadow-md">
+                  <div class="flex items-center">
+                    <img src="../assets/logo.png" alt="">
+                    <h1 class="text-xl font-bold">DevBoard</h1>
+                  </div>
+                    
+                    <div class="flex items-center gap-3">
+                        <img src="../assets/checkbox.png" alt="">
+                        <button class="btn btn-circle">23</button>
+                        <img src="../assets/theme-btn.png" alt="Theme Toggle" id="theme-toggle" class="cursor-pointer rounded-full p-1">
+                    </div>
+                </div>
+        </nav>
+    </header>
+        <main>
+            <!-- task assign -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-5 px-5 ">
+                <div class="col-span-2 p-4 rounded-lg bg-white">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="flex items-center bg-gray-200 rounded-lg p-4 gap-4">
+                            <img src="../assets/checkbox.png" alt="">
+                            <div>
+                            <h3>Task Assigned</h3>
+                            <h1 class="font-bold">06</h1>
+                            </div>
+                        </div>
+                        <div class="bg-primary text-white rounded-lg px-6 shadow-md flex items-center gap-4">
+                            <img class="" src="../assets/board.png" alt="">
+                            <span class="text-lg font-bold"> Discover Something  <br>New Today!</span>
+                        </div>
+
+                        <div class="flex items-center gap-2 bg-gray-200 p-3 px-5 rounded-lg ">
+                            <img src="../assets/calender.png" alt="Calendar Icon" class="h-6 w-6">
+                            <h3 class="text-lg font-semibold text-gray-700">Wed, <br> Jul 28 2025</h3>
+                        </div>
+                    </div>
+                    <!-- card area -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                        <!-- card-1 -->
+                        <div class="card bg-gray-200 shadow-md p-4">
+                            <h4 class="bg-white rounded-md w-20 px-2">ShopEase</h4>
+                            <h2 class="card-title text-lg font-semibold mt-2">Fix Mobile Button Issue</h2>
+                            <p class="text-sm bg-white rounded-lg p-3 mt-2">Debug using Chrome DevTools, check for overlap...</p>
+                            <p class="text-gray-400">-----------------------------------</p>
+                            <div class="flex justify-around">
+                            <p class="text-xs mt-2 ">Deadline <br> <span class="font-bold"> 21 March 2025</span></p>
+                            <button class="btn btn-primary mt-2 complete-btn ">Completed</button>
+                            </div>
+                            
+                        </div>
+                         <!-- card-2 -->
+                        <div class="card bg-gray-200 shadow-md p-4">
+                            <h4 class="bg-white rounded-md w-[90px] px-2">CloudSync</h4>
+                            <h2 class="card-title text-lg font-semibold mt-2">Add Dark Mode</h2>
+                            <p class="text-sm bg-white rounded-lg p-3 mt-2">Store user preference in localStorage, update CSS...</p>
+                            <p class="text-gray-400">-----------------------------------</p>
+                            <div class="flex justify-around">
+                                <p class="text-xs mt-2 ">Deadline <br> <span class="font-bold"> 21 March 2025</span></p>
+                                <button class="btn btn-primary mt-2 complete-btn ">Completed</button>
+                                </div>
+                        </div>
+
+                         <!-- card-3 -->
+
+                        <div class="card bg-gray-200 shadow-md p-4">
+                            <h4 class="bg-white rounded-md w-[90px] px-2">SwiftPay</h4>
+                            <h2 class="card-title text-lg font-semibold mt-2">Optimize  Home page</h2>
+                            <p class="text-sm bg-white rounded-lg p-3 mt-2">Debug using Chrome DevTools, check for overlappi</p>
+                            <p class="text-gray-400">-----------------------------------</p>
+                            <div class="flex justify-around">
+                                <p class="text-xs mt-2 ">Deadline <br> <span class="font-bold"> 21 March 2025</span></p>
+                                <button class="btn btn-primary mt-2 complete-btn ">Completed</button>
+                                </div>
+                        </div>
+                         <!-- card-4 -->
+
+                        <div class="card bg-gray-200 shadow-md p-4">
+                            <h4 class="bg-white rounded-md w-[50px] px-2">Meta</h4>
+                            <h2 class="card-title text-lg font-semibold mt-2">Add new emoji 🤲</h2>
+                            <p class="text-sm bg-white rounded-lg p-3 mt-2">Debug using Chrome DevTools, check for overlapping</p>
+                            <p class="text-gray-400">-----------------------------------</p>
+                            <div class="flex justify-around">
+                                <p class="text-xs mt-2 ">Deadline <br> <span class="font-bold"> 21 March 2025</span></p>
+                                <button class="btn btn-primary mt-2 complete-btn ">Completed</button>
+                                </div>
+                        </div>
+                         <!-- card-5 -->
+
+                        <div class="card bg-gray-200 shadow-md p-4">
+                            <h4 class="bg-white rounded-md w-[120px] px-2">Google LLC</h4>
+                            <h2 class="card-title text-lg font-semibold mt-2">Integrate OpenAI API </h2>
+                            <p class="text-sm bg-white rounded-lg p-3 mt-2">Debug using Chrome DevTools, check for overlappi</p>
+                            <p class="text-gray-400">-----------------------------------</p>
+                            <div class="flex justify-around">
+                                <p class="text-xs mt-2 ">Deadline <br> <span class="font-bold"> 21 March 2025</span></p>
+                                <button class="btn btn-primary mt-2 complete-btn ">Completed</button>
+                                </div>
+                        </div>
+                         <!-- card-6 -->
+
+                        <div class="card bg-gray-200 shadow-md p-4">
+                            <h4 class="bg-white rounded-md w-[90px] px-2">Glassdoar</h4>
+                            <h2 class="card-title text-lg font-semibold mt-2">Improve Job searching </h2>
+                            <p class="text-sm bg-white rounded-lg p-3 mt-2">Debug using Chrome DevTools, check for overlappi</p>
+                            <p class="text-gray-400">-----------------------------------</p>
+                            <div class="flex justify-around">
+                                <p class="text-xs mt-2 ">Deadline <br> <span class="font-bold"> 21 March 2025</span></p>
+                                <button class="btn btn-primary mt-2 complete-btn ">Completed</button>
+                                </div>
+                        </div>
+                        
+                    
+                    </div>
+                </div>
+                                <!-- activity log -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <div class="flex items-center">
+                    <img class="w-5 h-5 justify-center" src="../assets/activity.png" alt="">
+                    <h3 class="text-lg font-bold">Activity Log</h3>
+                </div>
+                    <button class="btn btn-sm bg-blue-700 text-white mt-2" id="clear-history">Clear History</button>
+                    <ul class="text-sm mt-3" id="activity-log">
+                    </ul>
+                </div>
+            </div>
+        </main>
+<script src="../script/theme-color.js"></script>
+<script src="../script/complete-btn.js"></script>
+<script src="../script/activity-log.js"></script>
+<script src="../script/assingnt.js"></script>
+</body>
+</html>
