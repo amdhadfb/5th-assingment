@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
+<body class="bg-gray-100 p-5">
     <header>
         <nav>
             <div class="container mx-auto">
@@ -18,12 +18,52 @@
                   </div>
                     
                     <div class="flex items-center gap-3">
-                        <img src="../assets/checkbox.png" alt="">
-                        <button class="btn btn-circle">23</button>
-                        <img src="../assets/theme-btn.png" alt="Theme Toggle" id="theme-toggle" class="cursor-pointer rounded-full p-1">
+                        <button id="back-btn" class="btn btn-primary rounded-md">Back to Desk</button>
                     </div>
                 </div>
         </nav>
+
+        <main class="">
+             <!-- question area -->
+            <h1 class="font-bold text-center text-xl mt-4">Blogs</h1>
+           <!-- question-1 -->
+             <div class="bg-white rounded-md p-5 mt-4">
+                <h1 class="font-bold">Question-1: What are the different ways to select an element in the DOM?</h1>
+                <p class="mt-3">DOM-এ এলিমেন্ট নির্বাচন করার বিভিন্ন পদ্ধতি হলো:
+                  getElementById(), getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll()।</p>
+             </div>
+           <!-- question-2 -->
+             <div class="bg-white rounded-md p-5 mt-4">
+                <h1 class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h1>
+                <p class="mt-3">
+                  1.innerHTML:এটি HTML এলিমেন্টের ভিতরের HTML কোড (যেমন ট্যাগ, উপাদান) সহ সমস্ত কনটেন্ট প্রদান করে।
+                  2. innerText:এটি শুধুমাত্র HTML এলিমেন্টের দৃশ্যমান টেক্সট কনটেন্ট প্রদান করে। এতে সিএসএস বা অন্য কিছু স্টাইলিংয়ের প্রভাব পড়তে পারে।
+                  3. textContent:এটি এলিমেন্টের সমস্ত টেক্সট কনটেন্ট প্রদান করে, তবে এটি innerText এর মতো সিএসএস বা স্টাইলিং এর প্রভাবের সাথে যুক্ত হয় না।
+                </p>
+             </div>
+           <!-- question-3 -->
+             <div class="bg-white rounded-md p-5 mt-4">
+                <h1 class="font-bold">Question-3: What is event delegation in the DOM?</h1>
+                <p class="mt-3">ইভেন্ট ডেলিগেশন হল একটি কৌশল যেখানে প্যারেন্ট এলিমেন্টে ইভেন্ট হ্যান্ডলার যুক্ত করা হয়, এবং সেই ইভেন্ট প্যারেন্ট এলিমেন্টের মাধ্যমে চাইল্ড এলিমেন্টগুলিতে প্রভাবিত হয়। এর মাধ্যমে, প্যারেন্ট এলিমেন্টই চাইল্ড এলিমেন্টের ইভেন্ট হ্যান্ডল করে। এই পদ্ধতি অনেক চাইল্ড এলিমেন্টে আলাদা করে ইভেন্ট অ্যাটাচ না করে, একটি ইভেন্ট হ্যান্ডলার দিয়ে কাজটি সম্পন্ন করে।</p>
+             </div>
+           <!-- question-4 -->
+             <div class="bg-white rounded-md p-5 mt-4">
+                <h1 class="font-bold">Question-4: What is event bubbling in the DOM?</h1>
+                <p class="mt-3">ইভেন্ট বাবলিং হল একটি DOM ইভেন্টের আচরণ যেখানে একটি ইভেন্ট প্রথমে সেই এলিমেন্টে ট্রিগার হয়, যেখানে ইভেন্টটি ঘটেছে, এবং তারপর ধীরে ধীরে প্যারেন্ট এলিমেন্ট থেকে প্যারেন্ট এলিমেন্টে বুদ্বুদ (bubble) করতে থাকে যতক্ষণ না এটি রুট এলিমেন্ট (যেমন document বা window) পৌঁছায়।</p>
+             </div>
+           <!-- question-5 -->
+             <div class="bg-white rounded-md p-5 mt-4">
+                <h1 class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                <p class="mt-3">JavaScript ব্যবহার করে DOM এ উপাদান তৈরি, যোগ, এবং মুছে ফেলার পদ্ধতি: <br>
+                  1. তৈরি করা: document.createElement() দিয়ে নতুন উপাদান তৈরি করা হয়। <br>
+                  2. যোগ করা: appendChild() দিয়ে নতুন উপাদান যোগ করা হয়।<br>
+                  3. মুছে ফেলা: remove() অথবা removeChild() দিয়ে উপাদান মুছে ফেলা হয়।
+
+                </p>
+             </div>
+        </main>
     </header>
+  <script src="./script/back-to-desk.js"></script>
 </body>
 </html>
